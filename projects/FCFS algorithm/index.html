@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="developerInfo/logo.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>FCFS Algorithm.</title>
+  </head>
+  <body>
+    <main class="mainContainer">
+      <!-- add section -->
+      <h1 style="text-align: center">FCFS Algorithm</h1>
+      <section class="addContainer">
+        <div class="addForm">
+          <input
+            class="pid"
+            required
+            type="text"
+            placeholder="ENTER PROCESS NAME"
+          />
+          <input
+            class="arivalTime"
+            required
+            type="number"
+            placeholder="ENTER ARRIVAL TIME"
+          />
+          <input
+            class="burstTime"
+            type="number"
+            placeholder="Enter burst time"
+          />
+          <button class="addBtn">Add Process</button>
+        </div>
+      </section>
+
+      <!-- process table -->
+      <section class="processContainer">
+        <h3>Process Table</h3>
+        <table class="processTable">
+          <tr>
+            <th>PID</th>
+            <th>Arrival</th>
+            <th>Burst</th>
+          </tr>
+          <!-- <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr> -->
+        </table>
+        <button class="calculateBtn">Calculate</button>
+      </section>
+
+      <!-- result Table -->
+      <section class="resultContainer">
+        <h3>Result Table</h3>
+        <table class="resultTable">
+          <tr>
+            <th>PID</th>
+            <th>Arrival</th>
+            <th>Burst</th>
+            <th>CT</th>
+            <th>WT</th>
+            <th>TAT</th>
+          </tr>
+          <!-- <tr>
+            <td>10</td>
+            <td>5</td>
+            <td>12</td>
+          </tr> -->
+        </table>
+      </section>
+
+      <!-- average times section -->
+      <section class="averageTimes">
+        <div></div>
+      </section>
+
+      <!-- chart part -->
+      <section class="chartContaier">
+        <h3>Gantt Chart</h3>
+
+        <div class="ganttChart"></div>
+
+        <div class="timeLine"></div>
+      </section>
+      <section class="developerContainer">
+        <button class="showInfo">About Developer</button>
+        <div class="developerInfo passive">
+          <img src="developerinfo/saqib-2.JPG" alt="developer-image" />
+          <h3>Hakim Saqib</h3>
+          <p>Software deveolper <br />System Designer!</p>
+          <p>Contact: <span>0765786763</span></p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
